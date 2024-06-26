@@ -1,0 +1,44 @@
+html{
+  font-size: 62.5%;
+}
+
+.main{
+  padding: 2.2rem;
+}
+
+.nav-menu{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.menu{
+  background-color: #444;
+}
+
+.hamburguer-button .icon{
+  display: inline-block;
+  width: 3rem;
+  text-align: center;
+}
+
+.hamburguer-button[aria-expanded="false"] .icon::before{
+  content: '\2630';
+}
+
+.hamburguer-button[aria-expanded="true"] .icon::before{
+  content: '\2715';
+}
+
+.menu li a{
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.menu li a:hover,
+.menu li a:focus{
+  background-color: #555;
+}
+
