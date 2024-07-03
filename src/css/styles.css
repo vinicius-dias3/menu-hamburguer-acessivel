@@ -2,10 +2,6 @@ html{
   font-size: 62.5%;
 }
 
-.main{
-  padding: 2.2rem;
-}
-
 .nav-menu{
   background-color: #333;
   color: white;
@@ -31,6 +27,19 @@ html{
   content: '\2715';
 }
 
+.hamburguer-button-js-enabled + .menu{
+  display: flex;
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 1.5rem;
+  top: 60px;
+  flex-direction: column;
+}
+
+.hamburguer-button-js-enabled+.menu-closed{
+  display: none;
+}
+
 .menu li a{
   color: white;
   padding: 1rem;
@@ -42,3 +51,51 @@ html{
   background-color: #555;
 }
 
+.hamburguer-button{
+  background-color: none;
+  display: none;
+  color: white;
+  padding: 1.4rem;
+  background-color: #333;
+}
+
+.hamburguer-button-js-enabled{
+  display: block;
+}
+
+@media (min-width: 768px){
+  .hamburguer-button{
+    display: none;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburguer-button-js-enabled + .menu{
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main{
+  padding: 2.2rem;
+  max-width: 75%;
+  font-size: 1.4rem;
+}
+
+.main p{
+
+}
+
+.main p span{
+  font-weight: bold;
+}
