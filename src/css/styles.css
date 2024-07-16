@@ -64,6 +64,15 @@ html{
   display: block;
 }
 
+.main div{
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.main div p{
+  margin-top: 2rem;
+}
+
 #services{
   height: 400px;
   background-color: lightblue;
