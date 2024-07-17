@@ -3,6 +3,11 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-menu{
   background-color: #333;
   color: white;
@@ -64,9 +69,15 @@ html{
   display: block;
 }
 
+
+.main{
+  align-self: center;
+}
+
 .main div{
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 2.5rem;
+  min-height: 400px;
 }
 
 .main div p{
@@ -74,20 +85,20 @@ html{
 }
 
 #services{
-  height: 400px;
   background-color: lightblue;
 }
 
 #about{
-  height: 400px;
   background-color: lightcoral;
 }
 #blog{
-  height: 500px;
   background-color: lightgoldenrodyellow;
 }
+
+#blog img{
+  display: block;
+}
 #contact{
-  height: 400px;
   background-color: lightgreen;
 }
 
