@@ -1,5 +1,11 @@
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-menu{
@@ -63,6 +69,54 @@ html{
   display: block;
 }
 
+
+.main{
+  align-self: center;
+}
+
+.main div{
+  margin-top: 3rem;
+  padding: 2.5rem;
+  min-height: 400px;
+}
+
+.main div p{
+  margin-top: 2rem;
+}
+
+#services{
+  background-color: lightblue;
+}
+
+#about{
+  background-color: lightcoral;
+}
+#blog{
+  background-color: lightgoldenrodyellow;
+}
+
+#blog img{
+  display: block;
+  max-width: 100%;
+}
+#contact{
+  background-color: lightgreen;
+}
+
+.main{
+  padding: 2.2rem;
+  font-size: 1.4rem;
+  max-width: 100%;
+}
+
+.main h1{
+  margin: 1.5rem 0;
+}
+
+.main p span{
+  font-weight: bold;
+}
+
 @media (min-width: 768px){
   .hamburguer-button{
     display: none;
@@ -84,18 +138,8 @@ html{
     justify-content: space-between;
     align-items: center;
   }
-}
 
-.main{
-  padding: 2.2rem;
-  max-width: 75%;
-  font-size: 1.4rem;
-}
-
-.main h1{
-  margin: 1.5rem 0;
-}
-
-.main p span{
-  font-weight: bold;
+  .main{
+    width: 75%;
+  }
 }
